@@ -5,8 +5,8 @@
     "version": "latest"
   },
   "modules": {
-    "forge-package-manager": "3.3.4",
-    "forge-router": "1.0.0",
+    "forge-package-manager": "3.3.5",
+    "forge-router": "1.0.1",
     "forge-view": "0.1.0",
     "forge-welcome": "1.2.3"
   }

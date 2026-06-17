@@ -5,6 +5,6 @@
     "version": "latest"
   },
   "modules": {
-    "forge-package-manager": "3.3.4"
+    "forge-package-manager": "3.3.5"
   }
 }
