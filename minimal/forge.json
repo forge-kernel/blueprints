@@ -5,9 +5,9 @@
     "version": "latest"
   },
   "modules": {
-    "forge-package-manager": "3.3.7",
-    "forge-router": "1.0.5",
-    "forge-view": "0.1.1",
-    "forge-welcome": "1.2.3"
+    "forge-package-manager": "latest",
+    "forge-router": "latest",
+    "forge-view": "latest",
+    "forge-welcome": "latest"
   }
 }
