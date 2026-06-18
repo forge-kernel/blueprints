@@ -6,13 +6,14 @@
   },
   "modules": {
     "forge-package-manager": "latest",
-    "forge-app-auth": "latest",
+    "forge-database-sql": "latest",
+    "forge-sql-orm": "latest",
     "forge-auth": "latest",
+    "forge-app-auth": "latest",
     "forge-components": "latest",
-    "forge-landing": "latest",
-    "forge-admin-console": "latest",
     "forge-router": "latest",
     "forge-view": "latest",
-    "forge-sql-orm": "latest"
+    "forge-landing": "latest",
+    "forge-admin-console": "latest"
   }
 }
