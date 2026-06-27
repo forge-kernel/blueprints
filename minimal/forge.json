@@ -1,5 +1,5 @@
 {
-  "name": "Minimal Starter",
+  "name": "Minimal Blueprint",
   "kernel": {
     "name": "forge-kernel",
     "version": "latest"

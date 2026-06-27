@@ -1,5 +1,5 @@
 {
-  "name": "Auth Starter",
+  "name": "Auth Blueprint",
   "kernel": {
     "name": "forge-kernel",
     "version": "latest"

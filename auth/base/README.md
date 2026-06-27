@@ -1,3 +1,3 @@
-# Auth Starter
+# Auth Blueprint
 
-Forge starter template with authentication scaffolding.
+Forge blueprint template with authentication scaffolding.

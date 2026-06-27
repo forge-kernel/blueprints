@@ -1,3 +1,3 @@
-# Minimal Starter
+# Minimal Blueprint
 
-A Forge starter kit with the package manager and welcome page. Ideal for full-featured web applications with a friendly landing page.
+A Forge blueprint with the package manager and welcome page. Ideal for full-featured web applications with a friendly landing page.

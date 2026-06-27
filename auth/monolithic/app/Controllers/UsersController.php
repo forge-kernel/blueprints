@@ -9,7 +9,8 @@ use App\Modules\ForgeRouter\Http\Attributes\Middleware;
 use App\Modules\ForgeRouter\Http\Response;
 use App\Modules\ForgeRouter\Attributes\Layout;
 use App\Modules\ForgeRouter\Routing\Route;
-use App\Modules\ForgeRouter\Traits\ControllerHelper;
+use App\Modules\ForgeRouter\Traits\ResponseHelper;
+use App\Modules\ForgeView\Traits\ViewHelper;
 use App\Modules\ForgeAuth\Contracts\UserContextInterface;
 use App\Services\AdminUserService;
 use Forge\Core\DI\Attributes\Service;
@@ -20,7 +21,8 @@ use Forge\Core\Helpers\Flash;
 #[Middleware('auth')]
 final class UsersController
 {
-    use ControllerHelper;
+    use ResponseHelper;
+    use ViewHelper;
 
     public function __construct(
         private readonly AdminUserService $userService,
@@ -34,7 +36,7 @@ final class UsersController
     {
         $usersData = $this->userService->getUsersTableData();
 
-        return $this->view(view: "pages/admin/users/list", data: [
+        return $this->view(view: "admin/users/list", data: [
             'columns' => $usersData['columns'],
             'rows' => $usersData['rows'],
             'currentUser' => $this->userContext->current(),
@@ -52,7 +54,7 @@ final class UsersController
             return Redirect::to('/admin/users');
         }
 
-        return $this->view(view: "pages/admin/users/user-detail", data: [
+        return $this->view(view: "admin/users/user-detail", data: [
             'user' => $user,
             'currentUser' => $this->userContext->current(),
         ]);

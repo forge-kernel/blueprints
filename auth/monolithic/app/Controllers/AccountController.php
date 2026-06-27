@@ -10,7 +10,8 @@ use App\Modules\ForgeRouter\Http\Request;
 use App\Modules\ForgeRouter\Http\Response;
 use App\Modules\ForgeRouter\Attributes\Layout;
 use App\Modules\ForgeRouter\Routing\Route;
-use App\Modules\ForgeRouter\Traits\ControllerHelper;
+use App\Modules\ForgeRouter\Traits\ResponseHelper;
+use App\Modules\ForgeView\Traits\ViewHelper;
 use Forge\Core\DI\Attributes\Service;
 use Forge\Core\Helpers\Flash;
 use Forge\Traits\SecurityHelper;
@@ -20,7 +21,8 @@ use Forge\Traits\SecurityHelper;
 #[Middleware('auth')]
 final class AccountController
 {
-    use ControllerHelper;
+    use ResponseHelper;
+    use ViewHelper;
     use SecurityHelper;
 
     public function __construct(
@@ -32,7 +34,7 @@ final class AccountController
     #[Layout("ForgeComponents:wrappers/admin-default")]
     public function editAccount(): Response
     {
-        return $this->view(view: "pages/admin/account", data: [
+        return $this->view(view: "admin/account", data: [
             'currentUser' => $this->userContext->current(),
         ]);
     }

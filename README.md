@@ -1,28 +1,28 @@
-# Forge Starters
+# Forge Blueprints
 
-This repository contains the official starter kits for the Forge PHP framework.
+This repository contains the official blueprints for the Forge PHP framework.
 
-## Available Starters
+## Available Blueprints
 
-| Starter     | Description                                                                              |
-| ----------- | ---------------------------------------------------------------------------------------- |
-| **blank**   | Minimal Forge project with just the package manager. Ideal for building from scratch.    |
-| **minimal** | Full-featured starter with package manager and welcome page. Ready for web applications. |
+| Blueprint  | Description                                                                                 |
+| ---------- | ------------------------------------------------------------------------------------------- |
+| **blank**  | Minimal Forge project with just the package manager. Ideal for building from scratch.       |
+| **minimal**| Full-featured blueprint with package manager and welcome page. Ready for web applications.  |
 
 ## Structure
 
 ```
-starters/
-├── blank/           # Blank starter source files
-└── minimal/         # Minimal starter source files
+blueprints/
+├── blank/           # Blank blueprint source files
+└── minimal/         # Minimal blueprint source files
 ```
 
 ## Publishing a Version
 
-Use the Forge CLI to build and publish a new starter version:
+Use the Forge CLI to build and publish a new blueprint version:
 
 ```bash
-php forge.php dev:starter:version --name=<starter-name>
+php forge.php dev:blueprint:version --name=<blueprint-name>
 ```
 
-This will create a ZIP archive and update the starters.json manifest.
+This will create a ZIP archive and update the blueprints.json manifest.
